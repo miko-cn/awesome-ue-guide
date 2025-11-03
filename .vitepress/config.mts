@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  
+  base: '/awesome-ue-guide/',
   title: "Awesome UE Guide",
   description: "Your free, community-built guide to learning Unreal Engine.",
   themeConfig: {
