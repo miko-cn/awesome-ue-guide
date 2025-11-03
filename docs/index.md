@@ -18,19 +18,37 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🥰
+    title: Free
+    details: Include free resources only, enjoy learning without any payment.
+  - icon: 📝
+    title: Community-Built
+    details: Built by community, totally open-source, open issue to add your recommendations.
+  - icon: 🧭
+    title: Brief-Intro
+    details: Get a brief introduction of all resources, easy to choose which to learn.
 ---
 
-<!-- # Getting Started
+## Join us
 
-You can get started using VitePress right away using `npx`!
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme'
 
-```sh
-npm init
-npx vitepress init
-``` -->
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/20636038?v=4',
+    name: 'miko-cn',
+    title: 'Owner',
+    links: [
+      { icon: 'github', link: 'https://github.com/miko-cn' },
+      // { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+    ]
+  }
+]
+</script>
+
+<VPTeamMembers :members />

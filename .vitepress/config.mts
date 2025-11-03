@@ -12,7 +12,8 @@ export default defineConfig({
     logo: '/logo-mini.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'About', link: '/about' }
     ],
 
     sidebar: [
