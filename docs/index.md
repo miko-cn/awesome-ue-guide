@@ -5,7 +5,10 @@ layout: home
 hero:
   name: "Awesome UE Guide"
   text: "Your free, community-built guide to learning Unreal Engine."
-  tagline: My great project tagline
+  tagline: 🚀 Fast-Track to Unreal. Build What's Next.
+  image:
+    src: /logo.png
+    alt: Awesome-UE-Guide-Logo
   actions:
     - theme: brand
       text: Markdown Examples
@@ -23,3 +26,11 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<!-- # Getting Started
+
+You can get started using VitePress right away using `npx`!
+
+```sh
+npm init
+npx vitepress init
+``` -->
