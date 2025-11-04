@@ -26,23 +26,19 @@ features:
     details: 拥抱开源，由社区共同构建。欢迎提交您推荐的优质资源。
   - icon: 🧭
     title: 资源导览
-    details: 快速洞悉所有资源概览，助您找到最佳入门路径。
+    details: 快速洞悉所有资源概览，助您找到最佳学习路径。
 ---
 
 ## 加入我们
 
 <script setup>
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme'
+import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/20636038?v=4',
-    name: 'miko-cn',
-    title: 'Owner',
+    name: 'Miko',
+    title: '为人民服务的仓库管家',
     links: [
       { icon: 'github', link: 'https://github.com/miko-cn' },
       // { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
