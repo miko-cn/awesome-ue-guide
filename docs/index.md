@@ -3,46 +3,42 @@
 layout: home
 
 hero:
-  name: "Awesome UE Guide"
-  text: "Your free, community-built guide to learning Unreal Engine."
-  tagline: 🚀 Fast-Track to Unreal. Build What's Next.
+  name: "虚幻引擎精粹指南"
+  text: "完全免费、社区共建的虚幻引擎学习指南。"
+  tagline: 🚀 助力极速成长，把虚幻照进现实。
   image:
     src: /logo.png
     alt: Awesome-UE-Guide-Logo
   actions:
     - theme: brand
-      text: Quick Start
-      link: ./markdown-examples
+      text: 马上开始
+      link: ./intro
     - theme: alt
-      text: About us
+      text: 关于我们
       link: ./about
 
 features:
   - icon: 🥰
-    title: 100% Free
-    details: Curated free resources only. Dive in and learn without any cost.
+    title: 完全免费
+    details: 仅收录精心筛选的免费资源。零成本投入，即刻开始学习。
   - icon: 📝
-    title: Community-Powered
-    details: Fully open-source and built by the community. Contribute by submitting your favorites.
+    title: 社区共建
+    details: 拥抱开源，由社区共同构建。欢迎提交您推荐的优质资源。
   - icon: 🧭
-    title: Guided Overview
-    details: Get a quick insight into all resources to find your perfect starting point.
+    title: 资源导览
+    details: 快速洞悉所有资源概览，助您找到最佳学习路径。
 ---
 
-## Join us
+## 加入我们
 
 <script setup>
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme'
+import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/20636038?v=4',
     name: 'Miko',
-    title: 'Founder',
+    title: '为人民服务的仓库管家',
     links: [
       { icon: 'github', link: 'https://github.com/miko-cn' },
       // { icon: 'twitter', link: 'https://twitter.com/youyuxi' }

@@ -1,6 +1,6 @@
-# Awesome-UE-Guide
+![Banner](./docs/public/banner-zh.png)
 
-English • [简体中文](README.zh-CN.md)
+# Awesome-UE-Guide 虚幻引擎精粹指南
 
-- `docs`：VitePress markdown files root
-- `.vitepress`：VitePress config, cache, dist and custom theme files
+- `docs`：VitePress 站点的项目根目录；
+- `.vitepress`：VitePress配置文件、开发服务器缓存、构建输出和可选主题自定义代码的位置。

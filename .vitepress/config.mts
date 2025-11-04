@@ -3,55 +3,69 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
+  lang: "zh-CN",
   base: '/awesome-ue-guide/',
-  title: "Awesome UE Guide",
-  description: "Your free, community-built guide to learning Unreal Engine.",
+  title: "虚幻引擎精粹指南",
+  description: "完全免费、社区共建的虚幻引擎学习指南。",
+  cleanUrls: true,
 
   head: [['link', { rel: 'icon', href: '/awesome-ue-guide/favicon.ico' }]],
-
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en',
-    },
-    zh: {
-      label: '简体中文',
-      lang: 'zh-CN',
-      title: "虚幻引擎精粹指南",
-      description: "完全免费、社区共建的虚幻引擎学习指南。",
-      themeConfig: {
-        nav: [
-          { text: '主页', link: './' },
-          { text: '关于', link: './about' }
-        ],
-      }
-    }
-  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo-mini.png',
-    nav: [
-      { text: 'Home', link: './' },
-      { text: 'About', link: './about' }
-    ],
-
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索',
+            buttonAriaLabel: '搜索'
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+              closeText: "关闭",
+            },
+          },
+        }
+      }
     },
-
+    nav: [
+      { text: '主页', link: './' },
+      { text: '关于', link: './about' }
+    ],
     sidebar: [
       {
-        text: 'Examples',
+        text: '开始',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '站点使命', link: '/intro' },
+          { text: '关于我们', link: '/about' }
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/miko-cn/awesome-ue-guide' }
-    ]
-  }
+    ],
+
+    // 文章翻页
+    docFooter: {
+      prev: "上一篇", //Next page
+      next: "下一篇", //Previous page
+    },
+    //当前页面 On this page
+    outlineTitle: "页面内容",
+    // 返回顶部 Return to top
+    returnToTopLabel: "返回顶部",
+    // 菜单  Menu
+    sidebarMenuLabel: "菜单",
+    notFound: {
+      title: "页面未找到",
+      quote: "哎呀，您好像迷失在网络的小胡同里啦，别着急，赶紧回头是岸！",
+      linkText: "返回首页",
+    },
+  },
 })
