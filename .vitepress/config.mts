@@ -6,15 +6,39 @@ export default defineConfig({
   base: '/awesome-ue-guide/',
   title: "Awesome UE Guide",
   description: "Your free, community-built guide to learning Unreal Engine.",
+
   head: [['link', { rel: 'icon', href: '/awesome-ue-guide/favicon.ico' }]],
+
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en',
+    },
+    zh: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: "虚幻引擎精粹指南",
+      description: "完全免费、社区共建的虚幻引擎学习指南。",
+      themeConfig: {
+        nav: [
+          { text: '主页', link: './' },
+          { text: '关于', link: './about' }
+        ],
+      }
+    }
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo-mini.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'About', link: '/about' }
+      { text: 'Home', link: './' },
+      { text: 'About', link: './about' }
     ],
+
+    search: {
+      provider: 'local'
+    },
 
     sidebar: [
       {
