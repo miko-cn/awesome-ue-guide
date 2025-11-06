@@ -43,8 +43,11 @@ export default defineConfig({
         text: '开始',
         items: [
           { text: '站点使命', link: '/intro' },
-          { text: '关于我们', link: '/about' }
+          { text: '学习指南', link: '/begin' },
         ]
+      },
+      {
+        text: '资源目录'
       }
     ],
     socialLinks: [
