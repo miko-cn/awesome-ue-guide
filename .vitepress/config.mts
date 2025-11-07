@@ -73,6 +73,11 @@ export default defineConfig({
       quote: "哎呀，您好像迷失在网络的小胡同里啦，别着急，赶紧回头是岸！",
       linkText: "返回首页",
     },
+
+    footer: {
+      message: '本站点使用 <a href="https://vitepress.dev/zh/" target="_blank">Vitepress</a> 构建 | 部署在 <a href="https://github.com/miko-cn/awesome-ue-guide" target="_blank">Github Pages</a>',
+      copyright: 'MIT License. Copyright © 2025 miko-cn.'
+    }
   },
   sitemap: {
     hostname: 'https://miko-cn.github.io/awesome-ue-guide/'
