@@ -9,7 +9,10 @@ export default defineConfig({
   description: "完全免费、社区共建的虚幻引擎学习指南。",
   cleanUrls: true,
 
-  head: [['link', { rel: 'icon', href: '/awesome-ue-guide/favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/awesome-ue-guide/favicon.ico' }],
+    ['meta', { name: 'google-site-verification', content: 'zxs0T4N-5W9F1VpSGKU2RYW1iNWYd_tv6y6Tia-00ns' }]
+  ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
