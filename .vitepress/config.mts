@@ -71,4 +71,7 @@ export default defineConfig({
       linkText: "返回首页",
     },
   },
+  sitemap: {
+    hostname: 'https://miko-cn.github.io/awesome-ue-guide'
+  }
 })
