@@ -75,6 +75,6 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://miko-cn.github.io/awesome-ue-guide'
+    hostname: 'https://miko-cn.github.io/awesome-ue-guide/'
   }
 })
