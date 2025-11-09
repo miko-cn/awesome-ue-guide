@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: 关于我们
       link: ./about
+    - theme: alt
+      text: Github
+      link: https://github.com/miko-cn/awesome-ue-guide
 
 features:
   - icon: 🥰

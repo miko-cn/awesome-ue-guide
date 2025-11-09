@@ -50,7 +50,10 @@ export default defineConfig({
         ]
       },
       {
-        text: '资源目录'
+        text: '资源目录',
+        items: [
+          { text: '虚幻官方资源', link: '/epic'}
+        ]
       }
     ],
     socialLinks: [
