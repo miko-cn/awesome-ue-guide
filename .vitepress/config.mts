@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import path from 'path'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,6 +9,9 @@ export default defineConfig({
   title: "虚幻引擎精粹指南",
   description: "完全免费、社区共建的虚幻引擎学习指南。",
   cleanUrls: true,
+  
+  // 指定自定义主题
+  theme: path.resolve(__dirname, './theme/index.ts'),
 
   head: [
     ['link', { rel: 'icon', href: '/awesome-ue-guide/favicon.ico' }],
@@ -46,13 +50,12 @@ export default defineConfig({
         text: '开始',
         items: [
           { text: '站点使命', link: '/intro' },
-          { text: '学习指南', link: '/begin' },
         ]
       },
       {
-        text: '资源目录',
+        text: '站点汇总',
         items: [
-          { text: '虚幻官方资源', link: '/epic'}
+          { text: '虚幻官方', link: 'site/epic'}
         ]
       }
     ],
